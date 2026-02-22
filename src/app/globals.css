@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------
+   Design system (pastel, playful, accessible)
+------------------------------------------------------------ */
+:root {
+  /* HSL values so Tailwind can use hsl(var(--...)) */
+  --bg: 270 100% 98%;
+  --surface: 0 0% 100%;
+  --text: 224 21% 16%;
+  --muted: 222 10% 42%;
+  --border: 230 28% 86%;
+
+  --primary: 171 44% 53%; /* mint */
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 346 78% 84%; /* blush */
+  --secondary-foreground: 224 21% 16%;
+
+  --accent: 252 100% 82%; /* lilac */
+  --accent-foreground: 224 21% 16%;
+
+  --warning: 45 100% 80%;
+  --warning-foreground: 224 21% 16%;
+
+  --font-sans: ui-sans-serif;
+  --font-display: ui-sans-serif;
+
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-bg text-text antialiased;
+}
+
+a {
+  @apply underline-offset-4;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 3px solid hsl(var(--accent));
+  outline-offset: 3px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* A subtle "paper" texture without images */
+.bg-noise {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(15, 23, 42, 0.05) 1px, transparent 0);
+  background-size: 18px 18px;
+}
+
+@layer components {
+  .container-padded {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply rounded-xl border border-border bg-surface shadow-soft;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full border border-border bg-surface/70 px-3 py-1 text-sm text-text shadow-soft backdrop-blur;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition;
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-primary-foreground shadow-glow hover:brightness-95 active:brightness-90;
+  }
+
+  .btn-secondary {
+    @apply btn bg-secondary text-secondary-foreground hover:brightness-95 active:brightness-90;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent text-text hover:bg-surface/70;
+  }
+
+  .tag {
+    @apply inline-flex items-center rounded-full bg-surface/70 px-3 py-1 text-xs font-medium text-muted;
+  }
+}
