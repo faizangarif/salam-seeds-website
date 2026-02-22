@@ -27,6 +27,7 @@ export function Footer() {
             <li><Link href="/digital">Digital</Link></li>
             <li><Link href="/store">Store</Link></li>
             <li><Link href="/resources">Resources</Link></li>
+            <li><Link href="/contact">Contact</Link></li>
           </ul>
         </div>
 
