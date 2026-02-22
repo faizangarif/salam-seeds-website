@@ -4,6 +4,7 @@ export const site = {
   description:
     "Monthly Hijri-themed Islamic educational subscription boxes for kids, paired with a digital companion platform and an Islamic eCommerce store.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+  email: "salamseedsco@gmail.com",
   social: {
     instagram: "#",
     tiktok: "#",

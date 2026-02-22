@@ -1,5 +1,6 @@
 import { ContactForm } from "@/components/ContactForm";
 import { Section } from "@/components/Section";
+import { site } from "@/lib/site";
 
 export default function ContactPage() {
   return (
@@ -20,7 +21,17 @@ export default function ContactPage() {
               <li>🌍 Location (for shipping feedback)</li>
             </ul>
 
-            <div className="mt-6 rounded-xl border border-border bg-warning/25 p-4 text-sm text-muted">
+            <div className="mt-6 rounded-xl border border-border bg-surface/70 p-4 text-sm text-muted">
+              <div className="font-semibold text-text">Prefer email?</div>
+              <p className="mt-1">
+                Reach us directly at{" "}
+                <a href={`mailto:${site.email}`} className="text-text underline">
+                  {site.email}
+                </a>
+              </p>
+            </div>
+
+            <div className="mt-4 rounded-xl border border-border bg-warning/25 p-4 text-sm text-muted">
               Privacy reminder: please don’t share sensitive information or anything about a child
               that you wouldn’t want stored. This site is parent-first.
             </div>

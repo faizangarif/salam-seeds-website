@@ -13,6 +13,9 @@ export function Footer() {
             {site.description}
           </p>
           <p className="text-xs text-muted">
+            <a href={`mailto:${site.email}`} className="underline">{site.email}</a>
+          </p>
+          <p className="text-xs text-muted">
             © {year} {site.name}. All rights reserved.
           </p>
         </div>
