@@ -3,13 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { LayoutDashboard, ShoppingBag, BarChart2, Settings, LogOut } from "lucide-react";
+import { LayoutDashboard, ShoppingBag, LogOut } from "lucide-react";
 
 const navLinks = [
   { href: "/admin", label: "Dashboard", icon: LayoutDashboard },
   { href: "/admin/orders", label: "Orders", icon: ShoppingBag },
-  { href: "/admin/traffic", label: "Traffic", icon: BarChart2 },
-  { href: "/admin/settings", label: "Settings", icon: Settings },
 ];
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
@@ -32,7 +30,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             </span>
           </div>
 
-          <nav className="hidden items-center gap-1 sm:flex">
+          <nav className="flex items-center gap-1">
             {navLinks.map(({ href, label, icon: Icon }) => (
               <Link
                 key={href}
