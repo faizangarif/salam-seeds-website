@@ -40,6 +40,11 @@ export function Footer() {
           </ul>
         </div>
       </div>
+      <div className="border-t border-border/30 py-3 text-center">
+        <p className="text-xs text-muted opacity-40">
+          <Link href="/admin/login">Owner</Link>
+        </p>
+      </div>
     </footer>
   );
 }
