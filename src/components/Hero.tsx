@@ -19,7 +19,7 @@ export function Hero() {
           </h1>
 
           <p className="max-w-prose text-base text-muted sm:text-lg">
-            Salaam Seeds delivers a playful, authentic learning ritual for Muslim families: a curated
+            Salam Seeds delivers a playful, authentic learning ritual for Muslim families: a curated
             kids box every Hijri month, two special Eid boxes each year, plus a digital companion
             platform and an Islamic goods store.
           </p>
@@ -65,7 +65,7 @@ export function Hero() {
               <div className="flex items-center gap-4">
                 <Image
                   src="/seedly.svg"
-                  alt="Seedly, the Salaam Seeds companion"
+                  alt="Seedly, the Salam Seeds companion"
                   width={92}
                   height={92}
                   className="animate-floaty"

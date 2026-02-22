@@ -1,6 +1,6 @@
-# Salaam Seeds Website
+# Salam Seeds Website
 
-The marketing and companion website for **Salaam Seeds** — monthly Hijri-themed subscription boxes and a digital learning platform for Muslim kids (ages 3–12).
+The marketing and companion website for **Salam Seeds** — monthly Hijri-themed subscription boxes and a digital learning platform for Muslim kids (ages 3–12).
 
 Built with **Next.js 14 (App Router)**, Tailwind CSS, Framer Motion, and the OpenAI Responses API (powering the Seedly chat companion).
 
@@ -55,7 +55,7 @@ Copy `.env.example` to `.env.local` for local development. On Vercel, set these 
 |----------|----------|-------------|
 | `OPENAI_API_KEY` | Yes (for chat) | Your OpenAI secret key. Without this the chat widget shows a friendly "not configured" message instead of erroring. |
 | `OPENAI_MODEL` | No | Model to use for the Responses API. Must support the Responses API + built-in `web_search_preview` tool. Default: `gpt-4o`. |
-| `NEXT_PUBLIC_SITE_URL` | Yes (production) | Full base URL, e.g. `https://salaamseeds.com`. Used by `sitemap.ts` and OpenGraph metadata. |
+| `NEXT_PUBLIC_SITE_URL` | Yes (production) | Full base URL, e.g. `https://salamseeds.com`. Used by `sitemap.ts` and OpenGraph metadata. |
 | `CHAT_EXTRA_ALLOWED_DOMAINS` | No | Comma-separated extra hostnames the Seedly bot may cite (see below). |
 
 ### Example `.env.local`

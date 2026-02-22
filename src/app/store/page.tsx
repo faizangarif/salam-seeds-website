@@ -40,7 +40,7 @@ export default function StorePage() {
       <Section kicker="eCommerce" title="A curated Islamic store (preview)">
         <div className="card p-6">
           <p className="text-sm text-muted">
-            Salaam Seeds is designed to grow into a thoughtful Islamic goods store—so families can
+            Salam Seeds is designed to grow into a thoughtful Islamic goods store—so families can
             find box-adjacent items in one joyful place. This page is a starter preview; you can
             connect it to Shopify (or another storefront) when you’re ready.
           </p>

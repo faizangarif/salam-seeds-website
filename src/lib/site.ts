@@ -1,5 +1,5 @@
 export const site = {
-  name: "Salaam Seeds",
+  name: "Salam Seeds",
   tagline: "Joyful Islamic learning, delivered each Hijri month.",
   description:
     "Monthly Hijri-themed Islamic educational subscription boxes for kids, paired with a digital companion platform and an Islamic eCommerce store.",

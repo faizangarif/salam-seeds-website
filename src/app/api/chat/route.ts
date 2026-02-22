@@ -15,8 +15,8 @@ function uniqByUrl(items: { url: string; title?: string | null }[]) {
   return Array.from(map.values());
 }
 
-const BUSINESS_CONTEXT = `You are Seedly, the playful Salaam Seeds companion bot (a friendly seedling mascot).
-You help parents/guardians learn about Salaam Seeds and answer general questions related to:
+const BUSINESS_CONTEXT = `You are Seedly, the playful Salam Seeds companion bot (a friendly seedling mascot).
+You help parents/guardians learn about Salam Seeds and answer general questions related to:
 - the Hijri calendar and kid-friendly Islamic learning
 - our products: monthly Hijri themed subscription boxes for kids, two special Eid boxes per year
 - a digital companion platform with micro-lessons (5–8 minutes), quizzes, badges, and printables
@@ -114,7 +114,7 @@ export async function POST(req: Request) {
 
     // If we got accredited citations or the answer doesn't appear to require citations, stop.
     const looksLikeGeneralKnowledge =
-      /\b(salaam seeds|subscription|monthly box|eid|digital companion|pricing)\b/i.test(
+      /\b(salam seeds|subscription|monthly box|eid|digital companion|pricing)\b/i.test(
         safeMessages[safeMessages.length - 1]?.content || "",
       );
 
@@ -125,7 +125,7 @@ export async function POST(req: Request) {
   if (citations.length === 0) {
     answerText =
       answerText +
-      "\n\n_(Note: I couldn't find accredited web sources to cite for this answer right now. If you want, rephrase the question or ask for a Salaam Seeds–specific answer.)_";
+      "\n\n_(Note: I couldn't find accredited web sources to cite for this answer right now. If you want, rephrase the question or ask for a Salam Seeds–specific answer.)_";
   }
 
   return NextResponse.json({ answer: answerText.trim(), citations });

@@ -41,7 +41,7 @@ export function ChatWidget() {
     {
       role: "assistant",
       content:
-        "Salaam! I’m Seedly 🌱✨ Ask me anything about Salaam Seeds (boxes, Hijri themes, digital companion), or ask for parent-friendly learning ideas. I’ll cite accredited sources when I look things up.",
+        "Salaam! I’m Seedly 🌱✨ Ask me anything about Salam Seeds (boxes, Hijri themes, digital companion), or ask for parent-friendly learning ideas. I’ll cite accredited sources when I look things up.",
     },
   ]);
   const [input, setInput] = useState("");

@@ -8,7 +8,7 @@ export default function AboutPage() {
         <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-start">
           <div className="card p-6">
             <p className="text-sm text-muted">
-              Salaam Seeds exists to make Islamic learning feel joyful, consistent, and doable for
+              Salam Seeds exists to make Islamic learning feel joyful, consistent, and doable for
               modern families. We blend the Hijri calendar with play-based learning so kids can grow
               their identity through stories, hands-on activities, and family rituals—one month at a
               time.
@@ -51,7 +51,7 @@ export default function AboutPage() {
             <div className="flex items-center gap-4">
               <Image
                 src="/seedly.svg"
-                alt="Seedly, the Salaam Seeds companion"
+                alt="Seedly, the Salam Seeds companion"
                 width={110}
                 height={110}
                 className="animate-floaty"

@@ -6,7 +6,7 @@ export default function AccessibilityPage() {
       <Section kicker="Accessibility" title="Built for everyone">
         <div className="card p-6 space-y-4 text-sm text-muted">
           <p>
-            Salaam Seeds aims to provide an accessible experience for all users. This site uses
+            Salam Seeds aims to provide an accessible experience for all users. This site uses
             semantic HTML, keyboard navigation support, visible focus states, readable typography,
             and clear interaction patterns.
           </p>
